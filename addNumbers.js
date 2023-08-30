@@ -9,5 +9,5 @@ try{
  console.log(sum);
 }
 catch(error){
-    console.log(error);  //TypeError: Cannot convert 'string' to number
+    console.log(error);  
 }

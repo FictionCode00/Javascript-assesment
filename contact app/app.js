@@ -4,12 +4,13 @@ var path = require('path');
 var cors=require('cors')
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-const { ConnectDB } =require( './config/dbCOnfig');
-var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
-var contactsRouter = require('./routes/contact');
+const { ConnectDB } =require( './src/config/dbConfig');
+var indexRouter = require('./src/routes/index');
+
+var usersRouter = require('./src/routes/users');
+var contactsRouter = require('./src/routes/contact');
 const  mongoose  = require('mongoose');
-const ErrorHandler = require('./utils/errorHandler');
+const ErrorHandler = require('./src/utils/errorHandler');
 var app = express();
 require('dotenv').config()
 var PORT= process.env.PORT || 8080

@@ -1,6 +1,7 @@
 import axios from "axios";
 
-let api_uri="http://localhost:8080"
+// let api_uri="http://localhost:8080"
+let api_uri="https://javascript-assesment.vercel.app/api"
 
 export const fetchContacts=()=>{
     return axios.get(api_uri+'/contacts')
